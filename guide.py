@@ -10,19 +10,18 @@ from dotenv import load_dotenv
 #dotenv initialization
 load_dotenv()
 pp = pprint.PrettyPrinter(indent=4)
-project_folder = os.path.expanduser("G:\My Drive\Moonrakers")
+project_folder = os.path.expanduser("G:\My Drive\MoonRakersAI\data")
 os.path.join(project_folder, 'setup.env')
 
 # variables
 DATABASE_NAME = "vectorDB_guide"
-OPENAI_KEY = "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"
+OPENAI_KEY = "xd"
 MODEL_NAME = "gpt-3.5-turbo-0301"
 EMBEDDING_MODEL = "text-embedding-ada-002"
-EMBEDDING_ENCODING = "cl100k_base"
 MAX_TOKENS = 8000
 
 # chromaDB setup
-client = chromadb.PersistentClient(path = "G:\My Drive\Moonrakers\Data")
+client = chromadb.PersistentClient(path = "G:\My Drive\MoonRakersAI\data")
 embedding_function = OpenAIEmbeddingFunction(api_key = OPENAI_KEY, model_name = EMBEDDING_MODEL)
 collection = client.get_or_create_collection(name = DATABASE_NAME, embedding_function = embedding_function)
 
@@ -43,17 +42,29 @@ def get_embedding(text):
    text = text.replace("\n", " ")
    return openai.Embedding.create(input = [text], model = EMBEDDING_MODEL)['data'][0]['embedding']
 
-def add_data(text, id, strength, result):
+def data_add(text, id, strength, result):
     collection.upsert(
-        documents=[text],
-        metadatas=[{"strength": strength, "result": result}],
-        ids=[id],
+        documents = [text],
+        metadatas = [{"strength": strength, "result": result}],
+        ids = [id],
+    )
+
+def data_add_response(id, result):
+    collection.update(
+        ids = [id],
+        metadatas = [{"result": result}]
+    )
+
+def data_query(text, num_results):
+    collection.query(
+        query_texts = [text],
+        n_results = num_results,
     )
 
 def main():
     while True:
         print(collection.count())
-        data_id = collection.count() + 1
+        id = str(collection.count() + 1)
 
         block_text = ""
         csv_data = []
@@ -61,19 +72,31 @@ def main():
         input_text = input("You: ")
         if input_text.lower() == "quit":
             break
-        id = str(data_id)
-        add_data(input_text, id, "0.5", "unknown")
+
+        data_add(input_text, id, "0.5", "unknown")
+
+        relevant_query = data_query(input_text, 2)
+        print(relevant_query)
+
+        
+
         response = generate_response(input_text)
+
+
+
+        data_add_response(id, response)
 
         block_text = "System response: " + response
         print(block_text)
 
-        collection.get()
-
 if __name__ == "__main__":
-    # main()
+    main()
+    temp_id = str(collection.count())
     print(collection.get(
-        ids = ["1"],
-        include = [ "metadatas" ]
+        ids = [temp_id],
+        include = ["metadatas", "documents"] # shows first 5 data points
         )
+    )
+    collection.delete(
+        where = {"strength": "0.5"}    # this will delete all of the data
     )

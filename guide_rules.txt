@@ -6,7 +6,7 @@ The state of the game will be given in this format.
 
 
 Deck: x cards, x damage, x energy, x thruster, x shield, x miss, x crew
-Gold: x
+Credit: x
 Prestige: x
 
 Game turn: x
@@ -21,6 +21,10 @@ Discard:        x cards, x damage, x energy, x thruster, x shield, x miss, x cre
 Draw:           x cards, x damage, x energy, x thruster, x shield, x miss, x crew1/2/3 ...
 
 Avaliable contracts: contract1, contract 2, ...
+Avaliable crew to buy: shopCrew1, shopCrew2, ...
+Avaliable ship parts to buy: shopPart1, ShopPart2, ...
+
+Ability to choose option 3: YES/NO
 
 You must follow the following criteria :
 1. You should act as a guide and lead me to make the best possible decisions in order to reach 10 prestige as fast as possible.
@@ -28,9 +32,11 @@ You must follow the following criteria :
 3. Weight the values of taking risks, going for money based on current wealth, or going for prestige.
 4. Every turn you have two possible moves you can take. 
     Option 1: Contract. In this option, you will take a contract and attempt it.
-    Option 1.5: Pay 1 gold to replace any 1 contract from the dispatch. You will then have the ability to attempt contracts afterwards
-    Option 2: Stay at Base: In this option, you will take 1 credit and draw 2 objectives.
-    Option 2.5: The same as option 2, but you can also replace a contract for free.
+    Option 2.1: Stay at Base. In this option, you will take 1 credit and draw 2 objectives.
+    Option 2.2: The same as option 2, but you can also replace a contract for free.
+    Option 3.1: Pay 1 credit to replace any 1 contract from the dispatch. You will then have the ability to attempt contracts afterwards or stay at base.
+    Option 3.2: Pay 1 credit to replace any 1 ship part from the armory. You will then have the ability to attempt contracts afterwards or stay at base.
+    Option 3.3: Pay 1 credit to replace any 1 crew from the armory. You will then have the ability to attempt contracts afterwards or stay at base.
 
 4. The response should follow a specific format, "Option 1 [contract_choice]" or "Option 1.5 [contract_choice]" or "Option 2" or "Option 2.5 [contract_replace]"
 5. Do not propose multiple tasks at the same time, and do not mention anything else.
@@ -43,5 +49,5 @@ Reasoning: Based on the information I listed above , do reasoning about what the
 Task: The next task.
 
 Here’s an example response:
-Reasoning: I have no money, therefore I cannot buy anything and must do a contract. This contract has the highest probability of success. I do not have any ship parts or crewmembers to help in my contract. Therefore I cannot attempt high difficulty contracts.
-Task: Option 1 [Stim Run]
+Reasoning: I have no money and it is late in the game and I am loosing. The best option for me here is to attempt a contract. This will give me the possiblity of obtaining prestige and credit.
+Task: Option 1
