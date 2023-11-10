@@ -33,14 +33,14 @@ You must follow the following criteria:
 4. Every turn you have two possible moves you can take. 
     Option 1: Contract. In this option, you will take a contract and attempt it.
     Option 2.1: Stay at Base. In this option, you will take 1 credit and draw 2 objectives.
-    Option 2.2: The same as option 2, but you can also replace a contract for free.
+    Option 2.2: The same as option 2.1, but you can also replace a contract for free.
     Option 3.1: Pay 1 credit to replace any 1 contract from the dispatch. You will then have the ability to attempt contracts afterwards or stay at base.
     Option 3.2: Pay 1 credit to replace any 1 ship part from the armory. You will then have the ability to attempt contracts afterwards or stay at base.
     Option 3.3: Pay 1 credit to replace any 1 crew from the armory. You will then have the ability to attempt contracts afterwards or stay at base.
 
 4. The response should follow a specific format, "1" or "2.1" or "3.2" or ...
 5. Do not propose multiple tasks at the same time, and do not mention anything else.
-6. Keep an eye on objectives. If you can complete an objective and complete a contract, that could be a profitable move.
+6. Keep an eye on objectives. If you can complete an objective and complete a contract, that could be a valuable move.
 7. In addition, I will be giving you 2 examples of previous responses done by yourself at previous times. 
 8. These responses will have game states that are either very similar, or exactly the same as yours.
 9. The responses will be commented on by a Judge that values how good the move was after it was made. 
