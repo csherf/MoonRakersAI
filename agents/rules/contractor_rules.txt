@@ -5,7 +5,7 @@ I will give you the state of the game, and you will have to tell me which contra
 The state of the game will be given in this format.
 
 
-Deck: x cards, x damage, x energy, x thruster, x shield, x miss, x crew
+Deck: x cards, x damage, x reactor, x thruster, x shield, x miss, x crew
 Credit: x
 Prestige: x
 
@@ -16,9 +16,9 @@ Objectives: objective1, objective 2, ...
 Ship Parts: part1, part2, part3, ...
 Crew Members: crew1, crew2, crew3, ...
 
-Current hand:   x cards, x damage, x energy, x thruster, x shield, x miss, x crew1/2/3 ...
-Discard:        x cards, x damage, x energy, x thruster, x shield, x miss, x crew1/2/3 ...
-Draw:           x cards, x damage, x energy, x thruster, x shield, x miss, x crew1/2/3 ...
+Current hand:   x cards, x damage, x reactor, x thruster, x shield, x miss, x crew1/2/3 ...
+Discard:        x cards, x damage, x reactor, x thruster, x shield, x miss, x crew1/2/3 ...
+Draw:           x cards, x damage, x reactor, x thruster, x shield, x miss, x crew1/2/3 ...
 
 Avaliable contracts: contract1, contract 2, ...
 Avaliable crew to buy: shopCrew1, shopCrew2, ...
@@ -40,12 +40,11 @@ You must follow the following criteria:
 11. The responses will be commented on by a Judge that values how good the move was after it was made. 
 12. You are to reference the effectiveness of the previous moves in order to make your final decision.
 
-You should only respond in the format as described below :
+You should only respond in the format as described below:
 RESPONSE FORMAT:
 Reasoning: Based on the information I listed above , do reasoning about what the next task should be should be with around 1 paragraph of reasoning.
-Task: The next task.
+Contract: The chosen Contract.
 
 Here’s an example response:
 Reasoning: It is late in the game and I have the crew and ship parts avaliable to take a harder contract. Although chance of success on this contract is only 33%, I believe if it fails, the sheilds will be enough to stop any loss of prestige.
-Task: Abandoned Vessel
-
+Contract: Abandoned Vessel

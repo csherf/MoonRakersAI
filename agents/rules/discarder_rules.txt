@@ -29,5 +29,14 @@ Ability to choose option 3: YES/NO
 You must follow the following criteria:
 1. You should discard the item that you feel is the best based on the state of the game.
 2. Make sure to value the owned items in choosing which item to discard.
-3. 
+3. Only discard the type of item that is specifically chosen.
+4. The response should follow a specific format, "item_remove".
 
+You should only respond in the format as described below:
+RESPONSE FORMAT:
+Reasoning: Based on the information I listed above, do reasoning about what item should be discarded with about 1 paragraph of reasoning.
+Card: (Card that is being removed)
+
+Here’s an example response:
+Reasoning: This part is obsolute based on the my part loadout. I do not need it to win the game and will have little use as I attempt harder contracts.
+Card: Duo 1000

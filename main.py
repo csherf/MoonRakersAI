@@ -15,7 +15,7 @@ os.path.join(project_folder, 'setup.env')
 
 # variables
 DATABASE_NAME = "vectorDB_guide"
-OPENAI_KEY = "xd"
+OPENAI_KEY = "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"
 MODEL_NAME = "gpt-3.5-turbo-0301"
 EMBEDDING_MODEL = "text-embedding-ada-002"
 MAX_TOKENS = 8000
@@ -78,12 +78,7 @@ def main():
         relevant_query = data_query(input_text, 2)
         print(relevant_query)
 
-        
-
         response = generate_response(input_text)
-
-
-
         data_add_response(id, response)
 
         block_text = "System response: " + response
