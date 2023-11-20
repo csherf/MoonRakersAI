@@ -1,9 +1,12 @@
 import openai
+import os
+from dotenv import load_dotenv
 
-openai.api_key = "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"
+load_dotenv()
+openai.api_key = os.environ['OPENAI_KEY']
 
-file1 = open('rules\\discarder_rules.txt')
-file2 = open('..\\game_state.txt')
+file1 = open('agents\\rules\\discarder_rules.txt')
+file2 = open('game_state.txt')
 discarder_rules = file1.read()
 game_state = file2.read()
 

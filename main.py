@@ -13,11 +13,12 @@ pp = pprint.PrettyPrinter(indent=4)
 project_folder = os.path.expanduser("G:\My Drive\MoonRakersAI\data")
 os.path.join(project_folder, 'setup.env')
 
+
 # variables
-DATABASE_NAME = "vectorDB_guide"
-OPENAI_KEY = "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"
-MODEL_NAME = "gpt-3.5-turbo-0301"
-EMBEDDING_MODEL = "text-embedding-ada-002"
+DATABASE_NAME = os.environ['DATABASE_NAME']
+OPENAI_KEY = os.environ['OPENAI_KEY']
+MODEL_NAME = os.environ['MODEL_NAME']
+EMBEDDING_MODEL = os.environ['EMBEDDING_MODEL']
 MAX_TOKENS = 8000
 
 # chromaDB setup
