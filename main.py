@@ -1,4 +1,3 @@
-import csv
 import os
 import numpy as np
 import openai
@@ -13,11 +12,12 @@ pp = pprint.PrettyPrinter(indent=4)
 project_folder = os.path.expanduser("G:\My Drive\MoonRakersAI\data")
 os.path.join(project_folder, 'setup.env')
 
+
 # variables
-DATABASE_NAME = "vectorDB_guide"
-OPENAI_KEY = "xd"
-MODEL_NAME = "gpt-3.5-turbo-0301"
-EMBEDDING_MODEL = "text-embedding-ada-002"
+DATABASE_NAME = os.environ['DATABASE_NAME']
+OPENAI_KEY = os.environ['OPENAI_KEY']
+MODEL_NAME = os.environ['MODEL_NAME']
+EMBEDDING_MODEL = os.environ['EMBEDDING_MODEL']
 MAX_TOKENS = 8000
 
 # chromaDB setup
@@ -56,10 +56,11 @@ def data_add_response(id, result):
     )
 
 def data_query(text, num_results):
-    collection.query(
+    query = collection.query(
         query_texts = [text],
         n_results = num_results,
     )
+    return query
 
 def main():
     while True:
@@ -73,17 +74,12 @@ def main():
         if input_text.lower() == "quit":
             break
 
-        data_add(input_text, id, "0.5", "unknown")
-
         relevant_query = data_query(input_text, 2)
         print(relevant_query)
 
-        
+        data_add(input_text, id, "0.5", "unknown")
 
         response = generate_response(input_text)
-
-
-
         data_add_response(id, response)
 
         block_text = "System response: " + response
