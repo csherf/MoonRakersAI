@@ -1,4 +1,3 @@
-import csv
 import os
 import numpy as np
 import openai
@@ -57,10 +56,11 @@ def data_add_response(id, result):
     )
 
 def data_query(text, num_results):
-    collection.query(
+    query = collection.query(
         query_texts = [text],
         n_results = num_results,
     )
+    return query
 
 def main():
     while True:
@@ -74,10 +74,10 @@ def main():
         if input_text.lower() == "quit":
             break
 
-        data_add(input_text, id, "0.5", "unknown")
-
         relevant_query = data_query(input_text, 2)
         print(relevant_query)
+
+        data_add(input_text, id, "0.5", "unknown")
 
         response = generate_response(input_text)
         data_add_response(id, response)
