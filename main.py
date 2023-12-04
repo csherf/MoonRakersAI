@@ -1,98 +1,47 @@
-import os
-import numpy as np
-import openai
-import pprint
 import chromadb
+from agents import guide
+from agents import gptf
+from agents import df
 from chromadb.utils.embedding_functions import OpenAIEmbeddingFunction
-from dotenv import load_dotenv
-
-#dotenv initialization
-load_dotenv()
-pp = pprint.PrettyPrinter(indent=4)
-project_folder = os.path.expanduser("G:\My Drive\MoonRakersAI\data")
-os.path.join(project_folder, 'setup.env')
-
-
-# variables
-DATABASE_NAME = os.environ['DATABASE_NAME']
-OPENAI_KEY = os.environ['OPENAI_KEY']
-MODEL_NAME = os.environ['MODEL_NAME']
-EMBEDDING_MODEL = os.environ['EMBEDDING_MODEL']
-MAX_TOKENS = 8000
 
 # chromaDB setup
-client = chromadb.PersistentClient(path = "G:\My Drive\MoonRakersAI\data")
-embedding_function = OpenAIEmbeddingFunction(api_key = OPENAI_KEY, model_name = EMBEDDING_MODEL)
-collection = client.get_or_create_collection(name = DATABASE_NAME, embedding_function = embedding_function)
-
-def generate_response(input):
-    openai.api_key = OPENAI_KEY
-    message = input
-    messages = []
-    messages.append({"role": "user", "content": message})
-    response = openai.ChatCompletion.create(
-            model = MODEL_NAME,
-            max_tokens = 128,
-            messages = messages)
-    reply = response["choices"][0]["message"]["content"]
-    return reply
-
-def get_embedding(text):
-   openai.api_key = OPENAI_KEY
-   text = text.replace("\n", " ")
-   return openai.Embedding.create(input = [text], model = EMBEDDING_MODEL)['data'][0]['embedding']
-
-def data_add(text, id, strength, result):
-    collection.upsert(
-        documents = [text],
-        metadatas = [{"strength": strength, "result": result}],
-        ids = [id],
-    )
-
-def data_add_response(id, result):
-    collection.update(
-        ids = [id],
-        metadatas = [{"result": result}]
-    )
-
-def data_query(text, num_results):
-    query = collection.query(
-        query_texts = [text],
-        n_results = num_results,
-    )
-    return query
+client = chromadb.PersistentClient(path = "G:\My Drive\Moonrakers\MoonRakersAI\data")
+embedding_function = OpenAIEmbeddingFunction(api_key = gptf.OPENAI_KEY, model_name = gptf.EMBEDDING_MODEL)
+gsCollection = client.get_or_create_collection(name = "game_state", embedding_function = embedding_function)
+csCollection = client.get_or_create_collection(name = "contract_state", embedding_function = embedding_function)
 
 def main():
-    while True:
-        print(collection.count())
-        id = str(collection.count() + 1)
+    print(gsCollection.count())
+    gsid = str(gsCollection.count() + 1)
+    csid = str(csCollection.count() + 1)
 
-        block_text = ""
-        csv_data = []
 
-        input_text = input("You: ")
-        if input_text.lower() == "quit":
-            break
+    # while 1 == 1: all of this would be in game loop
+    replace_ability = 1
+    response = guide.guide_run(gsCollection, gsid)
+    print(response)
 
-        relevant_query = data_query(input_text, 2)
-        print(relevant_query)
+    guide_choice = df.data_number(response)
 
-        data_add(input_text, id, "0.5", "unknown")
+    #if guide_choice == 1:
+        # player 
+    #elif guide_choice == 2.1:
+        # stay at base +1 credit +2 objectives
+    #elif guide_choice == 2.2:
+        # replace a contract, along with +1 credit +2 objectives
+    #elif guide_choice == 3.1 & replace_ability == 1:
+        # pay 1 gold to replace any 1 contract from the dispatch abd you will then have the ability to attempt contracts afterwards or stay at base
+    #elif guide_choice == 3.2 & replace_ability == 1:
+        # pay 1 gold to replace any 1 ship part from the dispatch abd you will then have the ability to attempt contracts afterwards or stay at base
+    #elif guide_choice == 3.3 & replace_ability == 1:
+        # pay 1 gold to replace any 1 crew from the dispatch abd you will then have the ability to attempt contracts afterwards or stay at base
+    #else:
+        # guide fucked up redo guide with same game state
 
-        response = generate_response(input_text)
-        data_add_response(id, response)
 
-        block_text = "System response: " + response
-        print(block_text)
 
 if __name__ == "__main__":
     main()
-    temp_id = str(collection.count())
-    print(collection.get(
-        ids = [temp_id],
-        include = ["metadatas", "documents"] # shows first 5 data points
-        )
-    )
-    collection.delete(
-        where = {"strength": "0.5"}    # this will delete all of the data
-    )
+    #gsCollection.delete(
+    #    where = {"strength": "0.5"}    # this will delete all of the data and used for reset 
+    #)
