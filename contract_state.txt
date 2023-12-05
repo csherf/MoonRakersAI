@@ -1,0 +1,13 @@
+This is the state of the current contract:
+
+Name of contract: Blockade Run
+Type of contract: Delivery Contract
+Requirements to complete: 1 thruster, 1 shield
+
+Current hand:   5 cards, 2 damage, 1 reactor, 1 thruster, 1 shield, 0 miss, 0 crew
+Discard:        0 cards, 0 damage, 0 reactor, 0 thruster, 0 shield, 0 miss, 0 crew
+Draw:           5 cards, 0 damage, 2 reactor, 1 thruster, 1 shield, 1 miss, 0 crew
+
+Current Energy: 2
+
+Objectives: Utopia, Gun For Hire

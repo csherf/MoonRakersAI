@@ -11,7 +11,7 @@ os.path.join(project_folder, 'setup.env')
 OPENAI_KEY = os.environ['OPENAI_KEY']
 MODEL_NAME = os.environ['MODEL_NAME']
 EMBEDDING_MODEL = os.environ['EMBEDDING_MODEL']
-MAX_TOKENS = 8000
+MAX_TOKENS = 1000
 
 
 def gpt_response(input):
@@ -19,7 +19,7 @@ def gpt_response(input):
     message = input
     response = openai.ChatCompletion.create(
             model = MODEL_NAME,
-            max_tokens = 128,
+            max_tokens = MAX_TOKENS,
             messages = message)
     reply = response["choices"][0]["message"]["content"]
     return reply

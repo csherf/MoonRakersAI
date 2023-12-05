@@ -1,50 +1,40 @@
-You are an AI designed to tell me which contract I should attempt in a game called Moonrakers
-Your ultimate goal is to win the game as efficiently as possible.
-I will give you the state of the game, and you will have to tell me which contract is best suited to advance my position in the game.
-
-The state of the game will be given in this format.
+You are an AI designed to tell me which card I should play while attempting a contract in a game called Moonrakers
+Your ultimate goal is to complete the contract
+I will give you the state of the contract, and you will tell me which card I should play
 
 
-Deck: x cards, x damage, x reactor, x thruster, x shield, x miss, x crew
-Credit: x
-Prestige: x
+The state of the contract will be given in this format.
 
-Game turn: x
-
-Objectives: objective1, objective 2, ...
-
-Ship Parts: part1, part2, part3, ...
-Crew Members: crew1, crew2, crew3, ...
+Name of contract: x
+Type of contract: x
+Requirements to complete: {contract data}
 
 Current hand:   x cards, x damage, x reactor, x thruster, x shield, x miss, x crew1/2/3 ...
 Discard:        x cards, x damage, x reactor, x thruster, x shield, x miss, x crew1/2/3 ...
 Draw:           x cards, x damage, x reactor, x thruster, x shield, x miss, x crew1/2/3 ...
 
-Avaliable contracts: contract1, contract 2, ...
-Avaliable crew to buy: shopCrew1, shopCrew2, ...
-Avaliable ship parts to buy: shopPart1, ShopPart2, ...
+Current Energy: x
 
-Ability to choose option 3: YES/NO
+Objectives: objective1, objective 2, ...
+
 
 You must follow the following criteria:
-1. You should attempt the contract that you feel is the best based on the state of the game.
-2. Make sure to value risks such as possible losses of prestige.
-3. Value opportinity costs of taking a harder contract and failing it against taking an easier one with a guarenteed victory.
-4. You do not know the order of the discard deck.
-5. When calculating odds of different contracts, remember that removing a card from the deck changes the chance of drawing the next card.
-6. The response should follow a specific format, "contract_choice".
-7. Always reference the chance of success in the reasoning.
-8. If its possible to complete an objective while doing a contract, value the gains of that against the risks.
-9. In addition, I will be giving you 2 examples of previous responses done by yourself at previous times. 
-10. These responses will have game states that are either very similar, or exactly the same as yours.
-11. The responses will be commented on by a Judge that values how good the move was after it was made. 
-12. You are to reference the effectiveness of the previous moves in order to make your final decision.
+1. You should use the card you feel is the best based on the state of the contract
+2. You can only play 1 card at a time, but imagine yourself as part of a greater system that will eventually play all the cards you need
+3. Make sure to consider draw probability
+4. You do not know the order of the draw deck, every card pulled will be a random card from the draw list
+5. Plan ahead with your energy, you can only play a card if you have some
+6. If you run out of energy without completing the contract, you have failed
+7. If its possible to complete an objective while doing a contract, value the gains of that against the risks
+8. In addition, I will be giving you 2 examples of previous responses done by yourself at previous times
+9. The response should follow a specific format
+10. Only provide 1 response
 
 You should only respond in the format as described below:
 RESPONSE FORMAT:
-Reasoning: Based on the information I listed above , do reasoning about what the next task should be should be with around 1 paragraph of reasoning.
-Contract: The chosen Contract.
+Reasoning: Based on the information I listed above, write a paragraph of reasoning about the card I should play
+Card: The chosen contract
 
-Here’s an example response:
-Reasoning: It is late in the game and I have the crew and ship parts avaliable to take a harder contract. Although chance of success on this contract is only 33%, I believe if it fails, the sheilds will be enough to stop any loss of prestige.
-Contract: Abandoned Vessel
+Here’s an example response: (do not print out example response in your output)
+Reasoning: The contract still requires 1 more damage. I do not have a damage card in hand, so I will have to draw the energy card. I have 2 energy in total, therefore I will play a thruster. This gives me the chance to draw two more cards, possibly a damge card.
+Card: Thruster

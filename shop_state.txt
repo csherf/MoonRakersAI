@@ -1,0 +1,11 @@
+This is the state of the current shop:
+
+Credit: 5
+
+Game turn: 4
+
+Ship Parts: Vector Jets E3
+Crew Members: Ryan Rogal
+
+Avaliable ship parts to buy: Pulsor mk1, The Gatling Laser, The Quantum Driver, MG Phase core, MG Support Core, Jump Jets E2
+Avaliable crew to buy: Kal Damar, AT-0K, Ada Massa

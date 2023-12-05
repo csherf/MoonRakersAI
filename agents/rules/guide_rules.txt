@@ -53,7 +53,18 @@ You should only respond in the format as described below:
 RESPONSE FORMAT:
 Reasoning: Based on the information I listed above , do reasoning about what the next task should be should be with around 1 paragraph of reasoning.
 Task: The next task.
+Contract: Chosen contract(only if needed)
 
-Here’s an example response:
-Reasoning: I have no money and it is late in the game and I am loosing. The best option for me here is to attempt a contract. This will give me the possiblity of obtaining prestige and credit.
-Task: 1
+Here’s example response 1:
+Reasoning: I have no credits and it is late in the game and I am loosing. The best option for me here is to attempt a contract. This will give me the possiblity of obtaining prestige and credit.
+Task: 1 
+Contract: Stim Run
+
+Here’s example response 3:
+Reasoning: I have no credits and its early in the game. There are no contracts I want to complete, therefore I should wait until the next turn.
+Task: 2.1
+
+Here’s example response 4:
+Reasoning: I have a lot of credits and I can replace a useless ship part for 1 credit. This will allow me to have the chance to buy a more useful ship part after my turn is over.
+Task: 3.2: 
+Ship Part: The Quantum Driver

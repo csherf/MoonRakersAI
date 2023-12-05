@@ -1,21 +1,25 @@
-import openai
-import os
-from dotenv import load_dotenv
+from agents import df
+from agents import gptf
 
-load_dotenv()
-openai.api_key = os.environ['OPENAI_KEY']
+def shopper_run(collection, id):
 
-file1 = open('agents\\rules\\shopper_rules.txt')
-file2 = open('game_state.txt')
-shopper_rules = file1.read()
-game_state = file2.read()
+    file1 = open('agents\\rules\\shopper_rules.txt')
+    file2 = open('shop_state.txt')
+    shopper_rules = file1.read()
+    shop_state = file2.read()
 
-messages = []
-messages.append({"role": "system", "content": shopper_rules})
-messages.append({"role": "user", "content": game_state})
-completion = openai.ChatCompletion.create( 
-    model="gpt-3.5-turbo",
-    messages=messages)
-reply = completion["choices"][0]["message"]["content"]
-messages.append({"role": "assistant", "content": reply})
-print("\n" + reply + "\n")
+    query_raw = df.data_query(shop_state, 2, collection)
+    query_input = str(query_raw["metadatas"])
+
+    input_text = []
+    input_text.append({"role": "system", "content": shopper_rules})
+    input_text.append({"role": "user", "content": shop_state})
+    # input_text.append({"role": "user", "content": query_input})
+
+    output_text = gptf.gpt_response(input_text)
+    df.data_add(shop_state, id, "0.5", output_text, collection)
+
+    print(input_text, file = open('agents\\previous_runthrough\\shopper.txt', 'w'))
+    print(output_text, file = open('agents\\previous_runthrough\\shopper.txt', 'a'))
+
+    return output_text
