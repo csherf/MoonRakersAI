@@ -13,7 +13,7 @@ Crew Members: nil
 
 Current hand:   5 cards, 1 damage, 2 energy, 1 thruster, 2 shield, 0 miss, 0 crew
 Discard:        3 cards, 1 damage, 0 energy, 1 thruster, 1 shield, 0 miss, 0 crew
-Draw unknown order:           2 cards, 0 damage, 1 energy, 0 thruster, 0 shield, 1 miss, 0 crew
+Draw:           2 cards, 0 damage, 1 energy, 0 thruster, 0 shield, 1 miss, 0 crew
 
 
 Avaliable contracts: Fuel Shortage, Stim Run, Pirate Treasure, Darelict Planet, Core World Ace, Negotiation Insurance, Abandoned Vessel, Icarus Run
