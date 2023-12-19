@@ -12,6 +12,8 @@ from img_edit import IMG_Edit as img_e
 
 pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/bin/tesseract'
 
+PATH_COLLECTION = 'collected_images'
+
 USE_PREV = True
 
 def main():
@@ -29,7 +31,7 @@ def main():
         all_cords = json.load(file)
 
     shop_cords = all_cords["shop"]
-    shop_img = "shop_captures/shop_2023-11-29_11-31-03.png"
+    shop_img = "collected_images/shop_captures/shop_2023-11-29_11-31-03.png"
     
     ##### TO-DO
     ## have a control loop that waits for button presses to do ceratin actions 
@@ -51,18 +53,17 @@ def main():
     crew_cords = all_cords["crew"]
     
     shop_img = cv2.imread(shop_img)
-    cropped_crew = []
 
-    for index,c_cords in enumerate(crew_cords):
-        crew = "crew_{}.png".format(index)
-        cropped_crew.append(img_e.crop(shop_img, crew, c_cords[0],c_cords[1]))
+  
+    cropped_crew = crop_crew(shop_img,crew_cords)
+
+    crop_crew_features(cropped_crew, all_cords["crew_features"])
 
     # once we store all the cords we will then use our ml model 
     # to get the text from the image by cropping specific sections
 
     # get all the values and save them to the shop OBJ
 
-    
     # #   contracts
     # Repeat the same as above but for contracts
     
@@ -70,6 +71,32 @@ def main():
     # repeat the same but for getting player info
 
     return
+
+def crop_crew(shop_img,crew_cords):
+    print(crew_cords)
+    cropped_crew = []
+    for index,c_cords in enumerate(crew_cords):
+
+        crew = "collected_images/cropped_imgs/crew_{}.png".format(index)
+        cropped_crew.append(img_e.crop(shop_img, crew, c_cords[0],c_cords[1]))
+
+    return cropped_crew
+
+
+def crop_crew_features(crews,cords):
+
+    for index,crew in enumerate(crews):
+        crew = cv2.imread(crew)
+        features = "collected_images/features/"
+
+        name = "{}name_crew_{}.png".format(features,index)
+        ability = "{}ability_crew_{}.png".format(features,index)
+        cost = "{}cost_crew_{}.png".format(features,index)
+        
+        img_e.crop(crew, name, cords['name'][0],cords['name'][1])
+        img_e.crop(crew, ability, cords["cost"][0],cords["cost"][1])
+        img_e.crop(crew, cost, cords["card_ability"][0],cords["card_ability"][1])
+
 
 def capture(name): 
     

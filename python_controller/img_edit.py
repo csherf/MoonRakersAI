@@ -5,7 +5,7 @@ class IMG_Edit:
         pass
 
     def crop(image,name, top_l,bot_r): 
-        cropped_image = image[top_l[1]:bot_r[1], top_l[0]:bot_r[0]]
+        cropped_image = image[int(top_l[1]):int(bot_r[1]), int(top_l[0]):int(bot_r[0])]
         # Save the cropped image
         cv2.imwrite(name, cropped_image)
         return name
