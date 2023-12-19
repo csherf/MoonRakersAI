@@ -1,0 +1,12 @@
+During the Buying Phase, the Mission Leader may use their available Credits to purchase any of the available Crew cards or Ship Parts that are face up next to the Armory Board.
+The Mission Leader may buy multiple cards if they have the Credits for it.
+
+Players cannot have more than 4 Ship Parts installed on their Command Terminal. 
+When a player buys a 5th Ship Part, they must remove one of their installed Ship Parts to make room. 
+The uninstalled Ship Part is removed from the game.
+The Action Cards provided by the removed Ship Part remain in the player’s Action Deck, but the player no longer benefits from the special abilities of the removed Ship Part. 
+
+After paying the required amount of Credits, any Crew members hired in the Buying Phase are added to the player’s discard pile. 
+
+Try to create a well-balanced ship. 
+If you buy too many Ship Parts with Damage and Shields, you may not have enough Reactors to give you the Actions to play them.
