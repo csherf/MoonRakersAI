@@ -1,0 +1,50 @@
+This is the State of the current game:
+
+Deck: {
+    count: 10, 
+    deck: [damage, damage, energy, energy, energy, thruster, thruster, shield, shield, miss]
+    }
+
+Coins: 2
+Prestige: {p1:0 p2:0, p3:0, p4:0, p5:0}
+
+Game turn: 1
+
+Objectives: [{name:obj1,condition:"condtion needed to achieve obj"},{name:obj2,condition:"condtion needed to achieve obj"}]
+
+Ship Parts: [
+    {name:shippart_x,cost:x,Ability:"Card ability...",type:"type_x"},
+]
+Crew Members: [
+    {name:crew_x,cost:x,Ability:"Card ability..."},
+]
+
+Current hand:   [damage_1,shield,crew_name,thruster, thruster]
+Discard:        [damage, energy, thruster, shield]
+Draw:           [damage, energy, thruster,miss] //Draw is in an unkown order 
+
+
+
+Avaliable contracts: [
+    {name:contract_x,type:"contract type",Prestige:x, coins:x, shop:x, requirments:[all requirments], hazard:x},
+    {name:contract_x,type:"contract type",Prestige:x, coins:x, shop:x, requirments:[all requirments], hazard:x},
+    {name:contract_x,type:"contract type",Prestige:x, coins:x, shop:x, requirments:[all requirments], hazard:x},
+    {name:contract_x,type:"contract type",Prestige:x, coins:x, shop:x, requirments:[all requirments], hazard:x},
+    {name:contract_x,type:"contract type",Prestige:x, coins:x, shop:x, requirments:[all requirments], hazard:x},
+    {name:contract_x,type:"contract type",Prestige:x, coins:x, shop:x, requirments:[all requirments], hazard:x},
+    {name:contract_x,type:"contract type",Prestige:x, coins:x, shop:x, requirments:[all requirments], hazard:x},
+    {name:contract_x,type:"contract type",Prestige:x, coins:x, shop:x, requirments:[all requirments], hazard:x}
+]
+
+Avaliable crew to buy: [
+    {name:crew_x,cost:x,Ability:"Card ability..."},
+    {name:crew_x,cost:x,Ability:"Card ability..."},
+    {name:crew_x,cost:x,Ability:"Card ability..."}
+]
+Avaliable ship parts to buy:[
+    {name:shippart_x,cost:x,Ability:"Card ability...",type:"type_x"},
+    {name:shippart_x,cost:x,Ability:"Card ability...",type:"type_x"},
+    {name:shippart_x,cost:x,Ability:"Card ability...",type:"type_x"}
+]
+
+Ability to choose option 3: YES
