@@ -3,18 +3,21 @@ from agents import gptf
 
 def shopper_run(collection, id):
 
-    file1 = open('agents\\rules\\shopper_rules.txt')
+    file1 = open('agents\\rules\\agent_rules\\shopper_rules.txt')
     file2 = open('shop_state.txt')
+    file3 = open('agents\\rules\\game_rules\\shop_rules.txt')
     shopper_rules = file1.read()
     shop_state = file2.read()
+    shop_rules = file3.read()
 
     query_raw = df.data_query(shop_state, 2, collection)
     query_input = str(query_raw["metadatas"])
 
     input_text = []
     input_text.append({"role": "system", "content": shopper_rules})
+    input_text.append({"role": "system", "content": shop_rules})
     input_text.append({"role": "user", "content": shop_state})
-    # input_text.append({"role": "user", "content": query_input})
+    #input_text.append({"role": "user", "content": query_input})
 
     output_text = gptf.gpt_response(input_text)
     df.data_add(shop_state, id, "0.5", output_text, collection)
