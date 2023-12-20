@@ -1,0 +1,175 @@
+GAME SETUP > DISPATCH & PRESTIGE TRACKER
+Objective cards are worth 1 Prestige point each and must be kept secret until immediately after a player fulfills them.
+
+Players take turns as the Mission Leader.
+The Mission Leaders turn consists of 3 phases: Planning, Execution, and Buying.
+
+GAMEPLAY > SCORING PRESTIGE
+Each Contract has a Prestige reward value in the upper right corner. 
+Players are awarded that number of Prestige upon successful completion of the Contract.
+
+Fulfilling Objective Cards
+An Objective card is a private contract that a player can claim any time, during any player's turn, when its conditions are met. 
+To claim an Objective, a player reveals it, shows its conditions have been met, and gains 1 Prestige. 
+
+GAMEPLAY > PLANNING PHASE
+During the Planning Phase, the Mission Leader may choose to pay 1 Credit to return an available Contract to the bottom of the Contract draw pile and replace it with a new one from the top. This may only be done once per turn.
+At the start of the Planning Phase, the Mission Leader has two options: Choose a Contract or Stay at Base.
+
+Option 1: Choose a Contract
+The Mission Leader may choose any of the faceup Contract cards next to the Dispatch Board and place it on the table for potential Allies to see.
+To complete a Contract, the Mission Leader must meet the requirements by playing an equal or greater number of Action Cards that match the icons on the bottom of the Contract card.
+When choosing a contract, the Mission Leader should:
+- Analyze the requirements on the bottom left of the Contract card and compare them to the cards in their current hand of Action Cards.
+- Decide which rewards benefit them the most. 
+Possible Rewards are, Prestige, Credits, and a Bonus Card.
+- Weigh the risk of the Hazard Dice. 
+
+GAMEPLAY > PLANNING PHASE
+
+Option 2: Stay At Base
+The Mission Leader may also decide to not attempt a Contract and instead to Stay at Base. 
+Mission Leaders who choose this option perform the following:
+1) Draw two new Objective cards. Keep one,
+and discard the other to the bottom of the
+Objective deck.
+2) Collect 1 Credit for protecting the base.
+3) Skip the Execution Phase and proceed directly to the Buying Phase.
+4) If desired, replace an available Contract with one from the top of the Contract Deck.
+5) Discard the active hand of Action Cards and draw 5 more.
+
+There are 4 different types of contracts, Rescue, Delivery, Kill, and Exploration, which is denoted at the top of the contract card. There are Objective cards that give Prestige Points for completing specific Contract types, so keep this in mind.
+
+Once a Contract has been chosen, the Mission Leader and Allies enter the Execution Phase.
+Roll Hazard Dice Begin the phase by collecting the amount of Hazard Dice found in the bottom right of the Contract card. 
+The Mission Leader rolls the amount listed.
+Each Hazard a player rolls will cost that player 1 Prestige unless they play a Shield by the end of the Execution Phase. Each Shield blocks 1 Hazard icon. 
+
+Playing Action Cards
+All players begin the Execution Phase with 1 Action, which allows the player to play 1 Action Card. Reactor cards give players an additional 2 Actions, allowing the player to play additional Action Cards. 
+Some Ship Parts and Crew cards also add additional Actions that can be used.
+A player may continue playing Action Cards until they run out of Actions, or run out of Action Cards to play from their hand.
+Players may not:
+ - Play additional Action Cards after theyve run out of Actions, even if a card in their hand would provide additional Actions.
+ - Draw additional cards if they run out of Action Cards, even if they have unused Actions.
+If a player needs to draw a card but his or her Draw Pile is empty, the player will shuffle their Discard Pile, put it facedown as their new Draw Pile, and continue to draw as normal.
+
+Reactor cards give a player 2 additional Actions.
+Damage cards have no effect other than fulfilling Contract requirements when played. 
+There are different types of Damage cards: 1 I, 2 II, and 3 III. 
+Each type fulfills Damage requirements equal to its level.
+Thruster cards give a player 2 additional cards from their Draw Pile.
+Miss have no other use, save for being used by special abilities on Ship Parts or Crew.
+Crew can be hired from the Armory and have special abilities that can be used when they are played.
+Shield cards protect a player from a single Hazard.
+
+Each type of Action Card fulfills 1 corresponding requirement on Contracts when played, and requires 1 Action to be played.
+
+[1] The Mission Leader is soloing the contract Claim Bounty. It requires 2 Damage and 2 Reactors, with 1 Hazard Dice.
+[2] They roll a single Hazard icon, which means theyll be losing a Prestige point at the end of the Contract if they are unable to play a Shield.
+[3] In their hand, they have a Thruster, a Reactor, a Miss, a 1 Damage I, and a Shield.
+[4] The Mission Leader begins by playing their Reactor card. This uses their starting Action, but adds 2 additional Actions. This also fulfills half of the Reactor requirement of the Contract.
+[5] The Mission Leader then plays their Thruster card, allowing them to draw two cards. This uses an Action - they now have 1 left. They draw the top 2 cards of their draw pile: a Reactor and a 3 Damage III.
+[6] The Mission Leader then uses their remaining Action to play a Reactor card, giving them 2 additional Actions. This fufills the second Reactor requirement on the Contract.
+[7] Next, they play their 3 Damage III, fulfilling the Contracts 2 Damage requirement, succesfully completing the Contract.
+[8] Finally, they play a Shield with their last Action, blocking the Hazard rolled in Step 2 that would have reduced their Prestige by 1.
+
+Completing a Contract
+A Contract is successfully completed when the requirements on the Contract card have been fulfilled.
+Players may continue to play Action Cards after a Contract has been completed, as long as they have available Actions to do so. 
+It can be helpful to play additional Shields to cover any unblocked Hazard.
+Once all players have finished playing their Action Cards, players collect the rewards listed at the top right of the Contract per the previously negotiated terms. Players must honor the negotiated terms.
+
+Contract Failure
+A Contract is failed when all players attempting the Contract have played all the Action Cards they can/desire to and have not fulfilled the requirements on the Contract.
+When a Contract has been failed, players receive none of the rewards from the Contract. 
+There are no other negative consequences for failing a Contract, but Hazard dice still reduce a players Prestige if unblocked by Shields or special abilities.
+
+
+GAMEPLAY > BUYING PHASE
+
+During the Buying Phase, the Mission Leader may use their available Credits to purchase any of the available Crew cards or Ship Parts that are face up next to the Armory Board.
+The Mission Leader may buy multiple cards if they have the Credits for it.
+The price of Ship Parts and Crew cards are listed at the bottom right of the cards.
+The Mission Leader may also spend 1 Credit to discard any of the cards in the Armory and replace it with the top card of the respective draw pile once per turn.
+
+Buying Ship Parts
+When a Ship Part is purchased, the Mission Leader attaches it to their ship in any slot on their Command Terminal. 
+Most Ship Parts also add Action Cards to a players Action Deck. 
+The top right of the Ship Part card shows the type and number of cards to be added.
+Any added Action Cards provided by Ship Parts are placed faceup in the players discard pile to the right of the Command Terminal.
+
+Ship Part Abilities
+All Ship Parts have special abilities.
+
+Removing Ship Parts
+Players cannot have more than 4 Ship Parts installed on their Command Terminal. 
+When a player buys a 5th Ship Part, they must remove one of their installed Ship Parts to make room. The uninstalled Ship Part is removed from the game.
+The Action Cards provided by the removed Ship Part remain in the players Action Deck, but the player no longer benefits from the special abilities of the removed Ship Part.
+For example, the Predator mk1 adds 1 Miss card, and 1 2 Damage II card to the purchasing players Action Deck.
+
+Remember that ship parts can have specials that can be helpful to use on contracts as well.
+Each Special is different, but how to use it is explained on the card.
+
+Hiring Crew
+After paying the required amount of Credits, any Crew members hired in the Buying Phase are added to the players discard pile. 
+Crew cards are treated like any other Action Cards. Each require 1 Action to play.
+When played, Crew cards contribute 1 to any Crew requirements on Contracts.
+Crew cards each have a special ability. 
+The ability is used when the card is played during a Contract.
+
+Active Hand
+When the Draw Pile is empty, shuffle the Discard Pile and move the shuffled cards to the Draw Pile.
+At the end of a turn, place all remaining cards in the Active Hand face up in the Discard Pile.
+
+GAMEPLAY > STRATEGY NOTES
+Before attempting a Contract, be sure to double check that you have enough cards in your Action Deck to complete the Contract. 
+Check the requirements of the Contract again and make sure youve got what it takes. 
+When planning to attempt a Contract with a high number of Hazard Dice, make sure you save a few extra Actions to play Shields. 
+
+Ending the Game
+The first player to have 10 Prestige at the end of any players turn wins the game. 
+
+Glossary I: General Terms
+Action Cards: Reactors, Thrusters, Shields, Miss, Damage I, Damage II, Damage III, and Crew.
+Each Action Card requires 1 Action to play.
+
+Action Deck: The Action Deck is the collection of all of a players Action Cards. 
+Actions: Actions allow players to play Action Cards. 
+Every player begins a Contract with 1 Action and may gain more by playing Reactors, some Crew or by using some Ship Part special abilities.
+Active Hand: The Active Hand is all of the Action Cards that a player is holding in their hand. 
+
+Bonus Cards: One of the 3 types of Contract rewards. 
+The player who negotiated for it draws the top card of the Crew or Ship Part decks. 
+
+Buying Phase: The Buying Phase allows players to purchase Ship Parts and hire Crew for their ships.
+
+Choose a Contract: If a player does not Stay at Base, they must choose one of the 8 Contracts faceup next to the Dispatch Board to attempt alone or with Allies.
+
+
+Contract Cards: Contract cards represent the missions available for players to attempt. 
+There are always 8 Contract cards available.
+Credits: Credits are the currency in Moonrakers.
+Crew: Crew are Action Cards that provide special abilities when played. 
+They are hired from the Armory and added to a players Action Deck discard pile. 
+Damage Cards: Damage cards are Action Cards that fulfill Damage requirements on Contracts, but have no other effect. 
+There are 3 types of Damage cards: I, II, and III.
+Execution Phase: The Execution Phase involves attempting a Contract by playing Action Cards alone or with Allies. 
+If successful, players receive the rewards denoted on the Contract. 
+Hazard: Hazard Dice represent the chance that things go wrong on a Contract. 
+Each Contract has the number of Hazard Dice that must be rolled in the bottom right corner, and each player will negotiate to roll all, some, or none of them.
+Each Dice can result in 0-2 Hazard icons. 1 Hazard can be blocked by 1 Shield. 
+For each unblocked Hazard, the player who rolled the dice loses 1 Prestige at the end of the Execution Phase.
+Each Hazard dice could result in 0 Hazard, 1 Hazard, or 2 Hazard.
+Miss Cards: Miss cards represent your ship malfunctioning. 
+They have no functional purpose 
+Objective Cards: Objective cards give players secret goals to complete in order to gain Prestige points.
+They are scored at the end of the turn, after the Buying Phase.
+Planning Phase: This is the first phase of each players turn. Players choose to either Stay at Base or Choose a Contract. 
+Prestige: Prestige are points awarded by Objectives and Contracts. 
+Reactor Cards: Reactor cards are Action Cards that give player 2 additional Actions and fulfill 1 Reactor requirement when played.
+Requirements: Requirements are the number of Action Cards of each type that must be played in order to complete a Contract.
+Shield Cards: Shield cards are Action Cards that protect a player from a single Hazard and fulfill 1 Shield requirement when played.
+Ship Parts: Ship Parts are the aftermarket parts that can be installed on the players ship to upgrade it. 
+Special Abilities: An Ability is an additional effect of playing a Crew card or an optional effect of a Ship Part.
+Thruster Cards: Thruster cards are Action Cards that give a player 2 additional cards and fulfill 1 Thruster requirement when played.

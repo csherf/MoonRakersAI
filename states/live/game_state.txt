@@ -1,0 +1,38 @@
+This is the State of the current game:
+
+Prestige: 1
+Credits: 1
+
+Game turn: 5
+
+Objectives: [{name:"Ace", condition:"Complete a contract with 2 or more Hazard Dice targeting you"},
+    {name:"Quick Strike", condition:"Play at least 3 Thruster cards on the same contract"},
+    {name:"Money Bags", condition:"Have 8 Credits at the end of your turn"},
+    {name:"Barrage", condition:"Play at least 5 Damage on the same contract"}]
+
+Ship Parts: [
+    {name:"MG1 Rail Gun",cost:3,Ability:"Requirement is 2 less for Damage if you don't play a Shield",type:"Magnomi",action_cards:[1 Miss, 1 Damage]},
+]
+Crew Members: [
+    {name:"Nella van Daval",cost:3,Ability:"+3 Cards. Requirement for Thruster is 1 less"},
+    {name:"Tantin al Vale", cost:2, Ability:"Play as a Damage 2 or a Shield"}
+]
+
+Max cards in hand: 5
+
+Active hand:   ["Nella van Daval", "Damage", "Shield", "Damage", "Thruster"]
+Discard:        ["Thruster", "Reactor", "Reactor", "Reactor", "Miss", "Miss", "Shield"]
+Draw:           ["Damage"] //Draw is in an unkown order and will only include these cards
+
+
+
+Avaliable contracts: [
+    {name:"Assault on Vilonia",type:"Kill Contract", Prestige:3, coins:5, shop:1, requirments:["8 Damage"], hazard:2},
+    {name:"Proof of Life", type:"Delivery Contract", Prestige:3, coins:4, shop:0, requirments:["4 Thruster", "4 Reactor"], hazard:2},
+    {name:"Refugee Crisis", type:"Delivery Contract", Prestige:2, coins:7, shop:0, requirments:["3 Thruster", "2 Crew"], hazard:2},
+    {name:"Derelict Planet", type:"Explore Contract", Prestige:3, coins:8, shop:0, requirments:["5 Reactor", "3 Crew", "2 Thruster"], hazard:2},
+    {name:"Ancient Ruins", type:"Explore Contract", Prestige:2, coins:7, shop:0, requirments:["4 Reactor", "4 Shield"], hazard:2},
+    {name:"Stim Run", type:"Delivery Contract", Prestige:1, coins:2, shop:0, requirments:["2 Thruster", "1 Reactor"], hazard:1},
+    {name:"Core World Ace", type:"Kill Contract", Prestige:1, coins:5, shop:1, requirments:["5 Damage"], hazard:1},
+    {name:"Claim Bounty", type:"Kill Contract", Prestige:1, coins:"3", shop:0, requirments:["3 Damage", "2 Reactor"], hazard:1}
+]

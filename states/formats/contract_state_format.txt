@@ -1,0 +1,12 @@
+This is the State of the current contract:
+
+Current contract: {name:contract_x,type:"contract type",Prestige:x, coins:x, shop:x, requirments:[all requirments], hazard:x},
+
+Current hand:   [damage_1,shield,crew_name,thruster, thruster]
+Discard:        [damage, energy, thruster, shield]
+Draw:           [damage, energy, thruster,miss] //Draw is in an unkown order
+Played cards:   [energy, energy, shield]
+
+Hazard: x
+
+Current actions: x

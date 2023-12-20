@@ -1,0 +1,26 @@
+This is the State of the current contract:
+
+Current contract: {name:"Stim Run", type:"Delivery Contract", Prestige:1, coins:2, shop:0, requirments:["2 Thruster", "1 Reactor"], hazard:1}
+
+Active hand:   ["Reactor", "Shield", "Miss", "Thruster",]
+Discard:        []
+Draw:           ["Nella van Daval", "Damage II", "Damage", "Damage", "Shield", "Miss", "Reactor", "Thruster"] //Draw is in an unkown order and will only include these cards
+Played cards:   ["Reactor"]
+
+Ship Parts: [
+    {name:"MG1 Rail Gun",cost:3,Ability:"Requirement is 2 less for Damage if you don't play a Shield",type:"Magnomi",action_cards:[1 Miss, 1 Damage]},
+]
+Crew Members: [
+    {name:"Nella van Daval",cost:3,Ability:"+3 Cards. Requirement for Thruster is 1 less"},
+]
+
+Objectives: [{name:"Ace", condition:"Complete a contract with 2 or more Hazard Dice targeting you"},
+    {name:"Quick Strike", condition:"Play at least 3 Thruster cards on the same contract"},
+    {name:"Money Bags", condition:"Have 8 Credits at the end of your turn"},
+    {name:"Barrage", condition:"Play at least 5 Damage on the same contract"}]
+
+
+Prestige: 1
+Hazard Roll: 0
+
+Current actions: 2

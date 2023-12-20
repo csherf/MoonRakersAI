@@ -1,0 +1,38 @@
+This is the State of the current shop and your inventory:
+
+Credits: 2
+Game turn: 5
+
+Owned Ship Parts: [
+    {name:"MG1 Rail Gun",cost:3,Ability:"Requirement is 2 less for Damage if you don't play a Shield",type:"Magnomi",action_cards:[1 Miss, 1 Damage]},
+    {name:"Tantin al Vale", cost:2, Ability:"Play as a Damage 2 or a Shield"}
+]
+Hired Crew Members: [
+    {name:"Nella van Daval",cost:3,Ability:"+3 Cards. Requirement for Thruster is 1 less"},
+]
+
+Avaliable crew to hite: [
+    {name:"Redacted",cost:3, Ability:"Play as a shield, reroll any number of your Hazard dice"},
+    {name:"Tantin al Vale", cost:2, Ability:"Play as a Damage 2 or a Shield"},
+    {name:"Kal Damar", cost:2, Ability:"+2 Cards, Optional: Trash 1 card from your hand"}
+]
+Avaliable ship parts to buy:[
+    {name:"Titan 3000", cost:3,A bility:"Requirement for Shields is 1 less",type:"Henko", action_cards:[1 Shield]},
+    {name:"Jump Jets E2", cost:2, Ability:"Allies receive +1 Card at the start of a contract",type:"Ventus", action_cards:[1 Thruster]},
+    {name:"Deburu mk1", cost:6, Ability:"Start every contract with +1 Action",type:"Komek", action_cards:[]}
+    {name:"The Quantum Driver", cost:7, Ability:"Once per a contract, play a Damage as a III Damage",type:"Sorelia", action_cards:[1 Miss, 1 Damage]},
+    {name:"Flash", cost:6, Ability:"Your hand limit becomes 6 instead of 5",type:"Ventus", action_cards:[]},
+    {name:"Predator mk1", cost:3, Ability:"All players can play 1 Damage 1 without using an Action",type:"Komek", action_cards:["1 Miss, 1 Damage"]}
+]
+
+Avaliable contracts: [
+    {name:"Assault on Vilonia",type:"Kill Contract",Prestige:3, coins:5, shop:1, requirments:["8 Damage"], hazard:2},
+    {name:"Proof of Life":"Delivery Contract",Prestige:3, coins:4, shop:0, requirments:["4 Thruster", "4 Energy"], hazard:2},
+    {name:"Refugee Crisis":"Delivery Contract",Prestige:2, coins:7, shop:0, requirments:["3 Thruster", "2 Crew"], hazard:2},
+    {name:"Derelict Planet":"Explore Contract",Prestige:3, coins:8, shop:0, requirments:["5 Energy", "3 Crew", "2 Thruster"], hazard:2},
+    {name:"Ancient Ruins":"Explore Contract",Prestige:2, coins:7, shop:0, requirments:["4 Energy", "4 Shield"], hazard:2},
+    {name:"Probe Recovery":"Explore Contract",Prestige:1, coins:2, shop:1, requirments:["3 Reactor", "2 Thruster"], hazard:1},
+    {name:"Core World Ace":"Kill Contract",Prestige:1, coins:5, shop:1, requirments:["5 Damage"], hazard:1},
+    {name:"Claim Bounty":"Kill Contract",Prestige:1, coins:"3", shop:0, requirments:["3 Damage", "2 Energy"], hazard:1}
+]
+

@@ -1,17 +1,17 @@
 Each type of Action Card fulfills 1 corresponding requirement on Contracts when played.
 Reactor cards give a player 2 additional Actions.
 Thruster cards give a player 2 additional cards from their Draw Pile.
-Shield cards protect a player from a single D Hazard.
-Damage cards have no effect other than fulfilling Contract requirements when played. There are different types of d Damage cards: 1 I, 2 II, and 3 III. Each type fulfills Damage requirements equal to its level.
-Miss cards represent Ship Parts malfunctioning and are discarded with the other cards at the end of the turn. They have no other use, save for being used by special abilities on Ship Parts or c Crew.
+Shield cards protect a player from a single Hazard.
+Damage cards have no effect other than fulfilling Contract requirements when played. There are different types of Damage cards: 1 I, 2 II, and 3 III. Each type fulfills Damage requirements equal to its level.
+Miss cards represent Ship Parts malfunctioning and are discarded with the other cards at the end of the turn. They have no other use, save for being used by special abilities on Ship Parts or Crew.
 Crew can be hired from the Armory and have special abilities that can be used when they are played.
 
-Playing a Contract:
-[1] The Mission Leader is soloing the contract “Claim Bounty”. It requires 2 Damage and 2 Reactors, with 1 D Hazard Dice.
-[2] They roll a single Hazard icon, which means they’ll be losing a Prestige point at the end of the Contract if they are unable to play a s Shield.
-[3] In their hand, they have a Thruster, a Reactor, a Miss, Damage I, and a Shield.
-[4] The Mission Leader begins by playing their Reactor card. This uses their starting Action, but adds 2 additional Actions. This also fulfills half of the Reactor requirement of the Contract.
-[5] The Mission Leader then plays their Thruster card, allowing them to draw two cards. This uses an Action - they now have 1 left. They draw the top 2 cards of their draw pile: a Reactor and a Damage III.
-[6] The Mission Leader then uses their remaining Action to play a Reactor card, giving them 2 additional Actions. This fufills the second Reactor requirement on the Contract.
-[7] Next, they play their 3 Damage III, fulfilling the Contract’s 2 d Damage requirement, succesfully completing the Contract.
-[8] Finally, they play a Shield with their last Action, blocking the Hazard rolled in Step 2 that would have reduced their Prestige by 1.
+Example of playing a Contract:
+1. The Mission Leader is soloing the contract Claim Bounty. It requires 2 Damage and 2 Reactors, with 1 Hazard Dice.
+2. They roll a single Hazard icon, which means theyll be losing a Prestige point at the end of the Contract if they are unable to play a Shield.
+3. In their hand, they have a Thruster, a Reactor, a Miss, Damage I, and a Shield.
+4. The Mission Leader begins by playing their Reactor card. This uses their starting Action, but adds 2 additional Actions. This also fulfills half of the Reactor requirement of the Contract.
+5. The Mission Leader then plays their Thruster card, allowing them to draw two cards. This uses an Action - they now have 1 left. They draw the top 2 cards of their draw pile: a Reactor and a Damage III.
+6. The Mission Leader then uses their remaining Action to play a Reactor card, giving them 2 additional Actions. This fulfills the second Reactor requirement on the Contract.
+7. Next, they play their 3 Damage III, fulfilling the Contracts 2 Damage requirement, successfully completing the Contract.
+8. Finally, they play a Shield with their last Action, blocking the Hazard rolled in Step 2 that would have reduced their Prestige by 1.

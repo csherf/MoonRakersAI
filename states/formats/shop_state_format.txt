@@ -1,0 +1,25 @@
+This is the State of the current shop:
+
+Credits: x
+Game turn: x
+
+Ship Parts: [
+    {name:shippart_x,cost:x,Ability:"Card ability...",type:"type_x"},
+]
+Crew Members: [
+    {name:crew_x,cost:x,Ability:"Card ability..."},
+]
+
+Avaliable crew to buy: [
+    {name:crew_x,cost:x,Ability:"Card ability..."},
+    {name:crew_x,cost:x,Ability:"Card ability..."},
+    {name:crew_x,cost:x,Ability:"Card ability..."}
+]
+Avaliable ship parts to buy:[
+    {name:shippart_x,cost:x,Ability:"Card ability...",type:"type_x", action_cards:[all cards]},
+    {name:shippart_x,cost:x,Ability:"Card ability...",type:"type_x", action_cards:[all cards]},
+    {name:shippart_x,cost:x,Ability:"Card ability...",type:"type_x", action_cards:[all cards]},
+    {name:shippart_x,cost:x,Ability:"Card ability...",type:"type_x", action_cards:[all cards]},
+    {name:shippart_x,cost:x,Ability:"Card ability...",type:"type_x", action_cards:[all cards]},
+    {name:shippart_x,cost:x,Ability:"Card ability...",type:"type_x", action_cards:[all cards]}
+]
