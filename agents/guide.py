@@ -12,17 +12,19 @@ def guide_run(collection, id):
     game_rules = file3.read()
     game_state_format = file4.read()
 
-    query_raw = df.data_query(game_state, 2, collection)
-    query_input = str(query_raw["metadatas"])
+    query_raw = df.data_query(game_state, 5, collection)
+    query_str = str(query_raw["metadatas"])
     question = "Tell me what move to do next."
+    query_input = "In addition, I will be giving you 2 different responses with an input context that is similar to yours. The strength is the efectiveness of this reponsonse it its past use. Use these responses as a relative guide and suggestion of strategy. " + "[" + query_str + "]"
 
     input_text = []
     #input_text.append({"role": "system", "content": game_state_format})
     input_text.append({"role": "system", "content": guide_rules})
     input_text.append({"role": "user", "content": game_rules})
     input_text.append({"role": "user", "content": game_state})
+    input_text.append({"role": "user", "content": query_input})
     input_text.append({"role": "user", "content": question})
-    #input_text.append({"role": "user", "content": query_input})
+    
 
     output_text = gptf.gpt_response(input_text)
     df.data_add(game_state, id, "0.5", output_text, collection)

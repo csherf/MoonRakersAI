@@ -10,7 +10,7 @@ You must follow the following criteria:
 5. If you do not have enough coins to puchase an item do not list an item to purchase
 6. If you do not want to but an item and save your money for something better, do not list an item to purchase
 7. The response should follow a specific format, "Item: part/crew"
-8. If a card has a special ability to Trash, that means you can permately remove a card from the deck. This could be potentially usefull to remove a Miss card.
+8. If a card has a special ability to Trash, that means you can permately remove a card from the deck.
 
 You should only respond in the format as described below:
 RESPONSE FORMAT:
